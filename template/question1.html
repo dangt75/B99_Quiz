@@ -1,0 +1,15 @@
+{% extends 'quiz.html' %}
+
+{% block details %}
+  <div class="header">
+    <p>You are invited out to a party despite being tight on money. Do you</p>
+  </div>
+  <form class="quiz", method="POST", action= "{{ url_for('q1') }}">
+    <ul class="options">
+      <li><input class="option" type="submit" name = 'choice' value="Spend it all, YOLO" /></li>
+      <li><input class="option" type="submit" name = 'choice' value="Decline the invitation" /></li>
+      <li><input class="option" type="submit" name = 'choice' value="Save some and decide to make up for the money spent another day" /></li>
+      <li><input class="option" type="submit" name = 'choice' value="Calculate the pros and cons of going to the party and then make the decision based on research" /></li>
+    </ul>
+  </form>
+{% endblock %}

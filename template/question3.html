@@ -1,0 +1,15 @@
+{% extends 'quiz.html' %}
+
+{% block details %}
+<div class="header">
+  <p>You want to buy some fresh fruits and vegetables. You have a choice between two supermarkets i.e., A and B: A sells organic produce that is more expensive but healthier and tastier but does not offer a loyalty card or discount. B sells conventional produce that is cheaper but may contain pesticides and additives but also provides loyalty cards and discounts on its product. Do you </p>
+</div>
+<form class="quiz", method="POST", action= "{{ url_for('q3') }}">
+  <ul class="options">
+    <li><input class="option" type="submit" name = 'choice' value="Buy from A and consider it as an investment in your long-term health and well-being" /></li>
+    <li><input class="option" type="submit" name = 'choice' value="Buy from B and save money for other expenses or goals" /></li>
+    <li><input class="option" type="submit" name = 'choice' value="Buy from both and balance your budget and nutrition" /></li>
+    <li><input class="option" type="submit" name = 'choice' value="Look for another market with better quality and price" /></li>
+  </ul>
+</form>
+{% endblock %}

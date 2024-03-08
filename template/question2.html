@@ -1,0 +1,15 @@
+{% extends 'quiz.html' %}
+
+{% block details %}
+<div class="header">
+  <p>You need to open a bank account in the UK. You have a choice between two banks: Bank Chedder offers a free account with no monthly fees, but charges £1 for every transaction. Bank Cheese offers an account with a £10 monthly fee but allows unlimited transactions. Do you</p>
+</div>
+<form class="quiz", method="POST", action= "{{ url_for('q2') }}">
+  <ul class="options">
+    <li><input class="option" type="submit" name = 'choice' value="Open an account with Bank A" /></li>
+    <li><input class="option" type="submit" name = 'choice' value="Open an account with Bank B" /></li>
+    <li><input class="option" type="submit" name = 'choice' value="Open an account with both banks and use them for different purposes" /></li>
+    <li><input class="option" type="submit" name = 'choice' value="Look for another bank with better options" /></li>
+  </ul>
+</form>
+{% endblock %}

@@ -1,0 +1,55 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+.bg-image {
+    /* The image used */
+    background-image: url(/static/img/b99_home.jpg);
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.header {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.intro {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #646a6b;
+    border-radius: 30px;
+    width: 20%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 30px;
+    
+  }
+button:hover {
+    background-color: #29b98b;
+  }
+.arrow {
+    font-size: 48px;
+    color: white
+}
+

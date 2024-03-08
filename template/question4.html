@@ -1,0 +1,15 @@
+{% extends 'quiz.html' %}
+
+{% block details %}
+<div class="header">
+  <p>You get night cravings. You want to buy some snacks and drinks at a convenience store. You have a choice between two options: Raw ingredients for making food at home that are relatively cheaper and ready-made products that are much costlier. Do you </p>
+</div>
+<form class="quiz", method="POST", action= "{{ url_for('q4') }}">
+  <ul class="options">
+    <li><input class="option" type="submit" name = 'choice' value="Buy raw ingredients and spend more time making a meal" /></li>
+    <li><input class="option" type="submit" name = 'choice' value="Buy readymade snacks and drinks and enjoy it whenever you want" /></li>
+    <li><input class="option" type="submit" name = 'choice' value="Look for another store with prices and options" /></li>
+    <li><input class="option" type="submit" name = 'choice' value="Buy and eat yogurt" /></li>
+  </ul>
+</form>
+{% endblock %}

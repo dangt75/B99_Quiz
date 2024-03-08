@@ -1,0 +1,15 @@
+{% extends 'quiz.html' %}
+
+{% block details %}
+<div class="header">
+  <p>You want to buy a new coat for the cold and rainy weather in London. You have a choice between two options: A wool coat or a waterproof coat from a recognized brand or Amazon or TEMU and 2nd hand events organized through London. Do you</p>
+</div>
+<form class="quiz", method="POST", action= "{{ url_for('q7') }}">
+  <ul class="options">
+    <li><input class="option" type="submit" name = 'choice' value="Buy it from the branded shop or Amazon and look good" /></li>
+    <li><input class="option" type="submit" name = 'choice' value="Buy it from TEMU or 2nd hand events but not sure about the quality and if you would find something that you really like" /></li>
+    <li><input class="option" type="submit" name = 'choice' value="Buy from both at one time and then decide which platform you would want to use for future" /></li>
+    <li><input class="option" type="submit" name = 'choice' value="Sleep comfortably in your blanket and spend those money on tasty food" /></li>
+  </ul>
+</form>
+{% endblock %}

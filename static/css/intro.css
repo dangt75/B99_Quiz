@@ -1,0 +1,46 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .container {
+    display: flex;
+    height: 100%;
+  }
+  .left-side {
+    background-image: url(/static/img/B99_intro.png);
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+  }
+  .right-side {
+    background-color: #296aaa;
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+  }
+  .right-side h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  .right-side p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+  }
+  button {
+    background-color: #ebef08;
+    color: white;
+    border: none;
+    border-radius: 12pt;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1em;
+  }

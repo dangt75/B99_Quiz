@@ -1,0 +1,15 @@
+{% extends 'quiz.html' %}
+
+{% block details %}
+<div class="header">
+  <p>You want to buy new clothes for the festive and cozy season in London. You have a choice between two options: A plain sweater from the mall or a patterned sweater from a thrift shop. The plain sweater costs £80 and is simple and versatile and can be used even for professional purposes. The patterned sweater costs £20 and is fun and colourful but can only be wore on special occasions. Do you</p>
+</div>
+<form class="quiz", method="POST", action= "{{ url_for('q8') }}">
+  <ul class="options">
+    <li><input class="option" type="submit" name = 'choice' value="Buy a plain sweater and look more professional in events that you attend" /></li>
+    <li><input class="option" type="submit" name = 'choice' value="Buy the patterned sweater and brighten up your mood as you have no professional business - Charles" /></li>
+    <li><input class="option" type="submit" name = 'choice' value="Buy both sweaters and wear them when required" /></li>
+    <li><input class="option" type="submit" name = 'choice' value="Your friend will lend you clothes for the occasion and this money is well spent in the pub with them" /></li>
+  </ul>
+</form>
+{% endblock %}

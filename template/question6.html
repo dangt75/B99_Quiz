@@ -1,0 +1,15 @@
+{% extends 'quiz.html' %}
+
+{% block details %}
+<div class="header">
+  <p>You commute to your university every day as your accommodation is at a significant distance from the uni. You have a choice between two options: Public transport or private bike. The public transport costs £5-£10 per day and takes 30-45 minutes. The private bike costs £300 one time and takes 15 minutes. Do you</p>
+</div>
+<form class="quiz", method="POST", action= "{{ url_for('q6') }}">
+  <ul class="options">
+    <li><input class="option" type="submit" name = 'choice' value="Use public transport as you are worried about your bike being stolen" /></li>
+    <li><input class="option" type="submit" name = 'choice' value="Buy the bike to save your time invest in your health and go green" /></li>
+    <li><input class="option" type="submit" name = 'choice' value="Look for another option with better efficiency and reliability" /></li>
+    <li><input class="option" type="submit" name = 'choice' value="Don’t attend lectures. Ask for an attendance code form one of your classmates" /></li>
+  </ul>
+</form>
+{% endblock %}

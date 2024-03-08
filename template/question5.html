@@ -1,0 +1,15 @@
+{% extends 'quiz.html' %}
+
+{% block details %}
+<div class="header">
+  <p>You were invited by you group members to go on a weekend trip to Edinburgh from London. This will be a good opportunity for you to learn and work better with your teammates. You have £500 in savings. The trip would cost £450 at max. Do you</p>
+</div>
+<form class="quiz", method="POST", action= "{{ url_for('q5') }}">
+  <ul class="options">
+    <li><input class="option" type="submit" name = 'choice' value="Go with them and release the accumulated stress from your studies" /></li>
+    <li><input class="option" type="submit" name = 'choice' value="Decline them saying you have some other arrangements and save the money for rainy day" /></li>
+    <li><input class="option" type="submit" name = 'choice' value="Ask for help from your friends and family to sponsor you for this trip" /></li>
+    <li><input class="option" type="submit" name = 'choice' value="Toss a coin and let universe decide" /></li>
+  </ul>
+</form>
+{% endblock %}
